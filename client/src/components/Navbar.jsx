@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles/navbar.css'
 
 const Navbar = () => {
   return (
@@ -17,11 +18,12 @@ const Navbar = () => {
             <li>Services</li>
             <li>Support</li>
         </ul>
+        <div className="avatar">
+           <img src="" alt="logo" />
+      </div>
      </div>
 
-     <div className="avatar">
-        <img src="" alt="" />
-     </div>
+   
 
   </div> 
   </>
