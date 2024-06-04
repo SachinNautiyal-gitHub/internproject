@@ -7,7 +7,7 @@ const Profile = () => {
 
             <div className="profilePage">
 
-               
+                <div className="main">
                     <h1>My profile</h1>
 
                     <button className="btn"> Add a profile photo</button>
@@ -30,9 +30,14 @@ const Profile = () => {
 
                     <div className="address">
                         <label htmlFor="Address">Address</label>
-                        <input type="text" />
+                        <textarea type="text" />
                     </div>
-      
+
+                    <div className="buttons">
+                        <button className='reset'>Reset</button>
+                        <button className='save'>Save</button>
+                    </div>
+                </div>
 
 
             </div>

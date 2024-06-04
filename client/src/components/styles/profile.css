@@ -3,9 +3,128 @@
 .profilePage{
     display: flex;
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     flex-direction: column;
-    padding: 5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 
+.main{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 1rem;
+    height: 100%;
+}
+
+.btn{
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    width: 200px;
+    background-color: #D1DBE8;
+    text-align: center;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.name{
+    display: flex;
+    gap: 1.2rem;
+    width: 460px;
+}
+
+
+.firstname{
+    display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+
+.firstname input{
+    outline: none;
+    padding: 1rem;
+    font-size: 15px;
+    border: 1px solid #D1DBE8;
+    border-radius: 6px;
+}
+
+
+.lastname{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lastname input{
+    outline: none;
+    padding: 1rem;
+    font-size: 15px;
+    border: 1px solid #D1DBE8;
+    border-radius: 6px;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 460px;
+}
+    
+
+
+.email input{
+    width: 420px;
+    outline: none;
+    padding: 1rem;
+    font-size: 15px;
+    border: 1px solid #D1DBE8;
+    border-radius: 6px;
+}
+
+
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 460px;
+}
+
+.address textarea{
+    width: 420px;
+    height: 150px;
+    outline: none;
+    padding: 1rem;
+    font-size: 15px;
+    border: 1px solid #D1DBE8;
+    border-radius: 6px;
+    resize: none;
+}
+
+.buttons{
+    align-self: flex-end;
+    display: flex;
+    gap: 1rem;
+}
+
+.reset{
+   border: none;
+   padding: 0.5rem;
+   border-radius:6px ;
+   width: 70px;
+   background-color: #E8EDF2;
+   cursor: pointer;
+}
+
+.save{
+   border: none;
+   padding: 0.5rem;
+   border-radius:6px;
+   width: 70px;
+   background-color: #1A80E5;
+   cursor: pointer;
+}
