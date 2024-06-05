@@ -9,6 +9,7 @@ function App() {
 
 
   const [user, setUser] = useState({});
+
   
   let data;
   const fetchUserDetails = async()=>{
@@ -35,19 +36,26 @@ function App() {
     fetchUserDetails();
  },[]);
 
+ useEffect(() => {
+  if (Object.keys(user).length !== 0) {
+    console.log('User state has been set', user);
+  }
+}, [user]);
+
+
+
 
 
   return (
     <div className="App">
    <>
    <BrowserRouter>
-   <Navbar user={user}/>
    
-   {/* {user && <p>{user[0].firstName}</p> } */}
-   
+   <Navbar user={user} />
    <Routes>
-    <Route path='/' element={<Home user={user}/>}/>
-    <Route path='/profile' element={<Profile/>}/>
+    <Route path='/' element={<Home user={user}/>}>
+    </Route>
+     <Route path='/profile' element={<Profile fetchUserDetails={fetchUserDetails}/>}/>
 
    </Routes>
    

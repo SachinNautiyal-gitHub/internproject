@@ -3,7 +3,7 @@ import './styles/profile.css'
 import avatar from '../asset/avatar.jpg'
 import {useNavigate} from 'react-router-dom'
 
-const Profile = () => {
+const Profile = ({fetchUserDetails}) => {
 
 
     const [userDetails, setUserDetails] = useState({profileImg : "", firstName:"", lastName:"", email:"", address:""})
@@ -52,6 +52,7 @@ const Profile = () => {
     const handelSubmit = async(e)=>{
        e.preventDefault();
         await uploadprofile();
+        fetchUserDetails();
         navigate('/');
     }
 

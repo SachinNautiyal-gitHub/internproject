@@ -29,25 +29,19 @@ router.post('/', async(req, res) => {
    
      try {
 
-        const {profileImg, firstName, lastName, email, address} = req.body;
-        
+        const userDetails = req.body;  
+        console.log('Payload size:', JSON.stringify(userDetails).length, 'bytes');
         let user = await User.findOne();
         if(user){
 
-           if(profileImg) user.profileImg = profileImg;
-            if(firstName)user.firstName = firstName;
-           if(lastName) user.lastName = lastName;
-            if(email) user.email= email;
-           if(address) user.address = address;
+           if(userDetails.profileImg) user.profileImg = userDetails.profileImg;
+            if(userDetails.firstName)user.firstName = userDetails.firstName;
+           if(userDetails.lastName) user.lastName = userDetails.lastName;
+            if(userDetails.email) user.email= userDetails.email;
+           if(userDetails.address) user.address = userDetails.address;
         }
         else{
-            user = new User({
-                profileImg, 
-                firstName,
-                lastName,
-                email,
-                address
-            })
+            user = new User(userDetails);
         }
 
         await user.save();
