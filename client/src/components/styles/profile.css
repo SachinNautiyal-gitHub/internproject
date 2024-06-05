@@ -159,3 +159,51 @@ form{
    background-color: #1A80E5;
    cursor: pointer;
 }
+
+@media (max-width:550px){
+     
+    
+.name{
+    display: flex;
+    gap: 1.2rem;
+    width: 250px;
+}
+
+
+.firstname input{
+  width: 110px;
+  padding: 0.5rem;
+}
+
+
+
+.lastname input{
+    width: 110px;
+    padding: 0.5rem;
+}
+
+.email{
+    width: 250px;
+    
+}
+    
+
+
+.email input{
+    width: 250px;
+    padding: 0.5rem;
+}
+
+
+.address{
+    width: 250px;
+}
+
+.address textarea{
+    width: 250px;
+    height: 100px;
+    padding: 0.5rem;
+    
+}
+
+}

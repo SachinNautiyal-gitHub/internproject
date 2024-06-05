@@ -1,6 +1,5 @@
 .navbar{
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     width: 98vw;
     height: 80px;
@@ -10,13 +9,13 @@
 }
 
 .title{
-  width: 50%;
+  width: 40%;
   padding-left: 3rem;
  
 }
 
 .nav-list{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     padding-left: 3rem;
@@ -50,4 +49,98 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+
+
+.menuIcon {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+
+  .hamburgermenu {
+    margin-top: 1rem;
+    display: none;
+    position: absolute;
+    height: 200px;
+    top: 100px;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .hamburgermenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+
+
+@media (max-width: 1200px ){
+    
+    .title{
+        width: 20%;
+    }
+}
+
+@media (max-width:950px){
+    .title{
+        width: 20%;
+    }
+
+    .nav-list{
+        width: 80%;
+        font-size: 12px;
+        padding-left: none;
+    }
+
+    .nav-list ul {
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width : 700px){
+
+
+    .title{
+        width: 80%;
+    }
+    .menuIcon {
+         display: block;
+         position: absolute;
+         top: 2rem;
+         right: 1rem;
+      }
+       
+  
+      .nav-list{
+           display: none;
+      }
+  
+      .hamburgermenu {
+          display:flex;
+          justify-content: space-around;
+          margin-top: 2rem;
+  
+      }
+  
+      .menuOpen{
+         display: flex;
+         align-items: flex-start;
+         height: 300px;
+         margin-bottom: 2px;
+      }
+  
 }
