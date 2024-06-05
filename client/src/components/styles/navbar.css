@@ -28,4 +28,10 @@
     list-style: none;
     font-size: 18px;
     font-weight: 400;
+   
+}
+
+.link{
+    text-decoration: none;
+    color: black;
 }

@@ -10,7 +10,7 @@ const Profile = () => {
                 <div className="main">
                     <h1>My profile</h1>
 
-                    <button className="btn"> Add a profile photo</button>
+                    <button className="btn"><i class="fa-solid fa-camera"></i>Add a profile photo</button>
 
                     <div className="name">
                         <div className="firstname">

@@ -30,6 +30,7 @@
     text-align: center;
     margin: 0.5rem;
     cursor: pointer;
+    gap: 1rem;
 }
 
 .name{

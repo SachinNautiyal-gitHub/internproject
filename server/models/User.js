@@ -6,7 +6,8 @@ const UserSchema = new mongoose.Schema({
   
 
    profileImg:{
-       
+       type:String,
+       required:true
    } ,
     firstName:{
         type:String,
