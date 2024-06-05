@@ -19,26 +19,26 @@ router.get('/', async (req, res) => {
             res.status(400).send(" No Account Found, please create one")
         }
     } catch (error) {
-        res.status(500).send("An Error Occured", error.massage)
+        res.send("An Error Occured")
     }
 })
 
 
 //route to update or create the profile 
-router.post('/', async (req, res) => {     
+router.post('/', async(req, res) => {     
    
      try {
 
         const {profileImg, firstName, lastName, email, address} = req.body;
         
-        let user = User.find();
+        let user = await User.findOne();
         if(user){
 
-            user.profileImg = profileImg;
-            user.firstName = firstName;
-            user.lastName = lastName;
-            user.email= email;
-            user.address = address;
+           if(profileImg) user.profileImg = profileImg;
+            if(firstName)user.firstName = firstName;
+           if(lastName) user.lastName = lastName;
+            if(email) user.email= email;
+           if(address) user.address = address;
         }
         else{
             user = new User({

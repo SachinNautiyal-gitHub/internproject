@@ -1,8 +1,11 @@
 import React from 'react'
 import './styles/navbar.css'
 import { Link } from 'react-router-dom'
+import avatar from '../asset/avatar.jpg'
 
-const Navbar = () => {
+const Navbar = (props) => {
+   
+  
   return (
   <>
   <div className="navbar">
@@ -20,7 +23,7 @@ const Navbar = () => {
             <Link className="link" >Support</Link>
         </ul>
         <div className="avatar">
-           <Link to={'/profile'}> <img src="" alt="logo" /></Link>
+           <Link to={'/profile'}> <img src={avatar} alt="logo" /></Link>
       </div>
      </div>
 
