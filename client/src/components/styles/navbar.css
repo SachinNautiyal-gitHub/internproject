@@ -137,7 +137,8 @@
       }
   
       .menuOpen{
-         display: flex;
+         display:flex;
+         position:absolute;
          align-items: flex-start;
          height: 300px;
          margin-bottom: 2px;
