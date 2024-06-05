@@ -15,7 +15,7 @@ function App() {
   let data;
   const fetchUserDetails = async()=>{
     try {
-     const res = await fetch("http://localhost:5000/profile", {
+     const res = await fetch("https://internproject-ycbw.onrender.com/profile", {
        method:"GET",
        headers:{
          "Content-Type" : "applicaton/json"

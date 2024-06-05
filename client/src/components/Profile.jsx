@@ -33,7 +33,7 @@ const Profile = ({fetchUserDetails}) => {
 
     const uploadprofile = async() => {
          try {
-           const res = await fetch("http://localhost:5000/profile", {
+           const res = await fetch("https://internproject-ycbw.onrender.com/profile", {
             method:'POST',
             headers:{
                 'Content-Type': 'application/json' 
